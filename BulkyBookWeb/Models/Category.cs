@@ -17,4 +17,3 @@ namespace BulkyBookWeb.Models
     }
 }
 
-//github test

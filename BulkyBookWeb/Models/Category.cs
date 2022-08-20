@@ -16,3 +16,5 @@ namespace BulkyBookWeb.Models
         public DateTime CreatedDate { get; set; } = DateTime.Now; 
     }
 }
+
+//github test

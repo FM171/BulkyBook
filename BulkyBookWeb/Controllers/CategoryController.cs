@@ -22,5 +22,18 @@ namespace BulkyBookWeb.Controllers
         {
             return View();
         }
+        //post
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(Category obj) // GET action method
+        {
+            if (ModelState.IsValid)
+            {
+                _db.Categories.Add(obj);
+                _db.SaveChanges();//this send changes to db
+                return RedirectToAction("Index");
+            }
+            return View(obj);
+        }
     }
 }

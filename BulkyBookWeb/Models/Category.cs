@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authentication;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace BulkyBookWeb.Models
@@ -11,6 +12,8 @@ namespace BulkyBookWeb.Models
         [Required] //This turns Key into required field
         public string Name { get; set; }
 
+        [DisplayName("Display Order")]
+       
         public int DisplayOrder { get; set; }
 
         public DateTime CreatedDate { get; set; } = DateTime.Now; 

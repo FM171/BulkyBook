@@ -50,6 +50,12 @@
                             </a>
                     </div>
                 </td>
+                <td>
+                    <div class="w-75 btn-group" role="group">
+                        <a asp-controller="Category" asp-action="Delete" asp-route-id ="@obj.Id" class="btn btn-primary" class="btn btn-danger">
+                            Delete
+                            </a>
+                    </div>
             </tr>
         }
     </tbody>

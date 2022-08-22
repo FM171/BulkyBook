@@ -8,10 +8,10 @@ builder.Services.AddControllersWithViews();
 //Below creates connection to SQLServer and db using the connection string 
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("DatabaseConnection")
-    )); 
+    ));
 
 
-
+builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
